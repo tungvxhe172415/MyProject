@@ -44,25 +44,13 @@ class DevConfig(Config):
     REDIS_DB = 1
     # REDIS_PASSWORD = 'tung1234567890'
 
-    # email config
-    # MAIL_SERVER = 'smtp.gmail.com'
-    # MAIL_PORT = 465
-    # MAIL_USERNAME = 'service.fit.mta@gmail.com'
-    # MAIL_PASSWORD = 'zhewbwhzallusent'
-    # MAIL_DEFAULT_SENDER = 'service.fit.mta@gmail.com'
-    # MAIL_USE_TLS = False
-    # MAIL_USE_SSL = True
-    # MAIL_DEBUG = False
+
 
     # website url
     # BASE_URL_WEBSITE = 'https://stg.fit.boot.ai'
 
-    # AWS_ACCESS_KEY = "AKIAY33P5KWDZW3E2VXC"
-    # AWS_SECRET_KEY = "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"
-    # SING_REGION_NAME = 'ap-southeast-1'
-    # EU_REGION_NAME = 'eu-central-1'
 
-    # S3_ENDPOINT = 'https://fit-uploader-bucket-stg.s3.ap-southeast-1.amazonaws.com'
+
     #
     # # Config Mongodb
     # MONGO_CONN = "mongodb://root:bootai%402022_@192.168.1.223:27017/?authMechanism=DEFAULT"
