@@ -15,6 +15,12 @@ dist/
 
 # Python venv
 venv/
+Lib/
+Scripts/
+
+
+
+
 
 # Log files
 *.log

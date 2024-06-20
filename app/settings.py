@@ -57,12 +57,10 @@ class DevConfig(Config):
     # website url
     # BASE_URL_WEBSITE = 'https://stg.fit.boot.ai'
 
-    # AWS_ACCESS_KEY = "AKIAY33P5KWDZW3E2VXC"
-    # AWS_SECRET_KEY = "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"
+
     # SING_REGION_NAME = 'ap-southeast-1'
     # EU_REGION_NAME = 'eu-central-1'
 
-    # S3_ENDPOINT = 'https://fit-uploader-bucket-stg.s3.ap-southeast-1.amazonaws.com'
     #
     # # Config Mongodb
     # MONGO_CONN = "mongodb://root:bootai%402022_@192.168.1.223:27017/?authMechanism=DEFAULT"
