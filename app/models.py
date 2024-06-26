@@ -17,6 +17,7 @@ class User(db.Model):
     address = db.Column(db.Text)  # Tỉnh, thành của user (FE tự convert)
     avatar_url = db.Column(db.String(255)) # co the luu tren S3, hoac local
     birthday = db.Column(db.DATE)
+    user_id_card = db.Column(db.String(255))
 
 
 

@@ -30,7 +30,7 @@ class DevConfig(Config):
     JWT_BLACKLIST_TOKEN_CHECKS = ['access', 'refresh']
 
     # mysql config
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:boot.ai@1273.0.0.1:3306/myproject?charset=utf8mb4'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:boot.ai@127.0.0.1:3306/myproject?charset=utf8mb4'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     BK_HOST_MYSQL = '127.0.0.1'
     BK_PORT_MYSQL = '3306'

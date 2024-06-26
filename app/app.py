@@ -34,7 +34,7 @@ def register_extensions(app):
     db.app = app
     db.init_app(app)  # SQLAlchemy
     jwt.init_app(app)
-    red.init_app(app)
+    # red.init_app(app)
     migrate.init_app(app, db)
 
 
