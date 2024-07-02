@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mysql-import-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: mysql-client
+        image: mysql:8.0
+        command: ["/bin/sh", "-c", "mysql -h mysql -u root -p$MYSQL_ROOT_PASSWORD < /backup/backup.sql"]      # sửa đường dẫn tới file sql
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret2    # sửa name theo secret tạo ở Secret
+              key: mysql-root-password
+        volumeMounts:
+        - name: backup-volume
+          mountPath: /backup
+      restartPolicy: Never
+      volumes:
+      - name: backup-volume
+        configMap:
+          name: mysql-backup
+          items:
+          - key: backup.sql
+            path: backup.sql
+  backoffLimit: 4
