@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-redis-config
+data:
+  redis-config: ""
+
+
+
+
+#    github tutorial https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/storage/redis/kubernetes/readme.md

@@ -9,6 +9,7 @@ spec:
       - name: mysql-client
         image: mysql:8.0
         command: ["/bin/sh", "-c", "mysql -h mysql -u root -p$MYSQL_ROOT_PASSWORD < /backup/backup.sql"]      # sửa đường dẫn tới file sql
+                                           #đây là tên pod có thể sửa
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
